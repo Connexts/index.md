@@ -1,51 +1,24 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+# Terms of Use for Naija News Flash✅
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+## Introduction
+Welcome to Naija News Flash✅, an Alexa Flash Briefing skill that delivers Nigerian news headlines. By enabling and using this skill, you agree to the following terms.
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+## Use of the Skill
+- This skill is provided for informational purposes only.  
+- Headlines are summaries and may not include full articles.  
+- You are responsible for how you use the information provided.
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+## Limitations
+- Naija News Flash✅ does not guarantee the accuracy, completeness, or timeliness of the news content.  
+- We are not liable for any decisions made based on the information provided by the skill.
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+## Intellectual Property
+- All content delivered through the skill remains the property of its respective sources.  
+- You may not reproduce, redistribute, or exploit the content without permission from the original publishers.
 
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+## Changes to Terms
+We may update these Terms of Use from time to time. Any changes will be posted on this page.
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+## Contact
+If you have questions about these Terms of Use, please contact us at:  
+ochukwu880@gmail.com
